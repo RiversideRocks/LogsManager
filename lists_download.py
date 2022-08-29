@@ -6,4 +6,5 @@ html = requests.get(url, headers={"User-agent": "RiversideRocks (+https://rivers
 soup = BeautifulSoup(html.text, "html.parser")
 links = soup.find_all('a')
 for link in links:
-    print(link['href'])
+    if ".txt" in link['href']:
+        print("OK URL: " + link['href'])
