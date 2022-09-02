@@ -13,4 +13,4 @@ links = soup.find_all('a')
 for link in links:
     if ".txt" in link['href']:
         href = requests.get("https://web.archive.org/web/20220328142042if_/https://dataset.domainsproject.org/generic_com/" + link['href'], headers={"User-agent": "RiversideRocks (+https://riverside.rocks)"})
-        print("GET /" + link['href'] + " - " + href.status_code)
+        print("GET /" + link['href'] + " - " + str(href.status_code))
