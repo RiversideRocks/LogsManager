@@ -9,8 +9,8 @@ blacklist = ["myvzw.com", "spectrum.com", "comcast.net", "netvigator.com", "reve
 
 try:
     result = dns.resolver.query('8f248fhdsmdiinsfindf.com', 'A')
-        for ipval in result:
-            print('IP', ipval.to_text())
+    for ipval in result:
+        print('IP', ipval.to_text())
 except:
     print("Fail")
 sys.exit()
