@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import os
-import dnspython as dns
+import dns
 import dns.resolver
 import sys
 
