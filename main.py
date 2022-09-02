@@ -7,12 +7,7 @@ import sys
 
 blacklist = ["myvzw.com", "spectrum.com", "comcast.net", "netvigator.com", "reverse-mundo-r.com", "naturalwireless.com"]
 
-try:
-    result = dns.resolver.query('8f248fhdsmdiinsfindf.com', 'A')
-    for ipval in result:
-        print('IP', ipval.to_text())
-except:
-    print("Fail")
+
 sys.exit()
 
 # Note to self: consider skipping the first domain file. It contains mostly ISP domains
@@ -26,6 +21,12 @@ for stuff in f:
                 if [bad for bad in blacklist if(bad in url)]:
                     print("Skipped")
                 else:
+                    try:
+                        result = dns.resolver.query(url, 'A')
+                        for ipval in result:
+                            print('IP', ipval.to_text())
+                    except:
+                        print("BAD URL!!!!")
                     print(url)
         #    print("We are " + str(c) + "/" + str(ran_lines))
 
