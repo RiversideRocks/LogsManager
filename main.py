@@ -2,12 +2,15 @@ import requests
 from bs4 import BeautifulSoup
 import os
 
+blacklist = ["myvzw.com", "spectrum.com", "comcast.net"]
+
 f = os.listdir('lists')
 for stuff in f:
     if ".txt" in stuff:
         with open('lists/' + stuff) as f:
             for url in f: # url is the url, and c is the counter
-                print(url)
+                if blacklist not in url:
+                    print(url)
         #    print("We are " + str(c) + "/" + str(ran_lines))
 
 url = "https://www.fbi.gov"
