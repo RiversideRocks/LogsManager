@@ -11,7 +11,7 @@ result = dns.resolver.query('8f248fhdsmdiinsfindf.com', 'A')
 try:
     for ipval in result:
         print('IP', ipval.to_text())
-else:
+except:
     print("Fail")
 sys.exit()
 
