@@ -18,14 +18,15 @@ for stuff in f:
                 if [bad for bad in blacklist if(bad in url)]:
                     print("Skipped")
                 else:
-                    try:
-                        result = dns.resolver.query(url, 'A')
-                        for ipval in result:
-                            print('IP', ipval.to_text())
-                    except:
-                        print("BAD URL!!!!")
+                    # ADD THIS BACK LATER BECAUSE AT ONE
+                    # POINT IT WORKED
+                    #try:
+                    #    result = dns.resolver.query(url, 'A')
+                    #    for ipval in result:
+                    #        print('IP', ipval.to_text())
+                    #except:
+                    #    print("BAD URL!!!!")
                     print(url)
-        #    print("We are " + str(c) + "/" + str(ran_lines))
 
 url = "https://www.fbi.gov"
 html = requests.get(url, headers={"User-agent": "Master 1337 Hacker"})
