@@ -5,7 +5,7 @@ import os
 f = os.listdir('lists')
 for stuff in f:
     if ".txt" in stuff:
-        current_file = open('files/' + stuff, 'r')
+        current_file = open('lists/' + stuff, 'r')
         lines = current_file.readlines()
   
         c = 0
