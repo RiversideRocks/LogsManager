@@ -6,9 +6,8 @@ f = os.listdir('lists')
 for stuff in f:
     if ".txt" in stuff:
         with open('lists/' + stuff) as f:
-        c = 0
-        for url in f: # url is the url, and c is the counter
-            print(url)
+            for url in f: # url is the url, and c is the counter
+                print(url)
         #    print("We are " + str(c) + "/" + str(ran_lines))
 
 url = "https://www.fbi.gov"
