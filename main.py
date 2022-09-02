@@ -7,9 +7,6 @@ import sys
 
 blacklist = ["myvzw.com", "spectrum.com", "comcast.net", "netvigator.com", "reverse-mundo-r.com", "naturalwireless.com"]
 
-
-sys.exit()
-
 # Note to self: consider skipping the first domain file. It contains mostly ISP domains
 # that tend to include nothing of use
 
