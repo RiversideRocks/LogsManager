@@ -6,7 +6,7 @@ f = os.listdir('lists')
 for stuff in f:
     if ".txt" in stuff:
         current_file = open('lists/' + stuff, 'r')
-        lines = current_file.readlines()
+        lines = len(current_file.readlines())
   
         c = 0
         ran_lines = current_file.readlines()
