@@ -8,8 +8,11 @@ import sys
 blacklist = ["myvzw.com", "spectrum.com", "comcast.net", "netvigator.com", "reverse-mundo-r.com", "naturalwireless.com"]
 
 result = dns.resolver.query('8f248fhdsmdiinsfindf.com', 'A')
-for ipval in result:
-    print('IP', ipval.to_text())
+try:
+    for ipval in result:
+        print('IP', ipval.to_text())
+else:
+    print("Fail")
 sys.exit()
 
 # Note to self: consider skipping the first domain file. It contains mostly ISP domains
