@@ -1,6 +1,14 @@
 import requests
 from bs4 import BeautifulSoup
 import time
+import os
+
+print("Clearing old files out from directory")
+f = os.listdir('lists')
+for stuff in f:
+    if ".txt" in stuff:
+        os.remove(stuff)
+        print("Destroyed " + str(stuff))
 
 print("Downloading from the archive.org via the Wayback Machine...")
 print("This may take a long time!")
