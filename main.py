@@ -8,7 +8,6 @@ for stuff in f:
         with open('lists/' + stuff) as f:
         c = 0
         for url in f: # url is the url, and c is the counter
-            c = c +1
             print(url)
         #    print("We are " + str(c) + "/" + str(ran_lines))
 
