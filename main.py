@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import os
 
-blacklist = ["myvzw.com", "spectrum.com", "comcast.net"]
+blacklist = ["myvzw.com", "spectrum.com", "comcast.net", "netvigator.com", "reverse-mundo-r.com", "naturalwireless.com"]
 
 f = os.listdir('lists')
 for stuff in f:
