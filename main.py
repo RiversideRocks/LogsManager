@@ -9,7 +9,9 @@ for stuff in f:
     if ".txt" in stuff:
         with open('lists/' + stuff) as f:
             for url in f: # url is the url, and c is the counter
-                if blacklist not in url:
+                if [bad for bad in blacklist if(bad in url)]:
+                    print("Skipped")
+                else:
                     print(url)
         #    print("We are " + str(c) + "/" + str(ran_lines))
 
