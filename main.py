@@ -11,9 +11,9 @@ for stuff in f:
         c = 0
         ran_lines = current_file.readlines()
         print(lines)
-        #for url in ran_lines: # url is the url, and c is the counter
+        for url in ran_lines: # url is the url, and c is the counter
         #    c = c +1
-        #    print(len(url))
+            print(url)
         #    print("We are " + str(c) + "/" + str(ran_lines))
 
 url = "https://www.fbi.gov"
