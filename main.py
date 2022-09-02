@@ -10,7 +10,7 @@ for stuff in f:
   
         c = 0
         ran_lines = current_file.readlines()
-        print(ran_lines)
+        print(lines)
         #for url in ran_lines: # url is the url, and c is the counter
         #    c = c +1
         #    print(len(url))
