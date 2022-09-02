@@ -6,8 +6,6 @@ f = os.listdir('lists')
 for stuff in f:
     if ".txt" in stuff:
         with open('lists/' + stuff) as f:
-        
-        lines = len(current_file.readlines())
         c = 0
         for url in f: # url is the url, and c is the counter
             c = c +1
